@@ -33,7 +33,9 @@ class Image extends Model
 
     public function fileUrl()
     {
-        return Storage::url($this->file);
+        $urlImg = "http://localhost:8888/larapics/public/storage/" . $this->file;
+        return $urlImg;
+        //return Storage::url($this->file); ORIGINAL MODIFY TO GET THE RIGHT URL
     }
 
     public function permalink()

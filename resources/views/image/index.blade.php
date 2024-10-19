@@ -1,6 +1,6 @@
 <h1>All Images</h1>
 
-    <a href="{{ route('images.create') }}">Upload Image</a>
+<a href="{{ route('images.create') }}">Upload Image</a>
 
 @if($message = session('message'))
     <div>{{ $message }}</div>

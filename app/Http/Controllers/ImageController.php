@@ -11,7 +11,6 @@ class ImageController extends Controller
     public function index()
     {
         $images = Image::published()->latest()->paginate(15);
-
         return view('image.index', compact('images'));
     }
 
